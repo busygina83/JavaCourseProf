@@ -1,0 +1,94 @@
+Index: caches_3/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.0-rc1/5da6f0ab49271847ef9b99925a1767a229bf369e/jackson-annotations-2.13.0-rc1.module
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/caches_3/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.0-rc1/5da6f0ab49271847ef9b99925a1767a229bf369e/jackson-annotations-2.13.0-rc1.module b/caches_3/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.0-rc1/5da6f0ab49271847ef9b99925a1767a229bf369e/jackson-annotations-2.13.0-rc1.module
+new file mode 100644
+--- /dev/null	
++++ b/caches_3/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.0-rc1/5da6f0ab49271847ef9b99925a1767a229bf369e/jackson-annotations-2.13.0-rc1.module	
+@@ -0,0 +1,84 @@
++{
++  "formatVersion": "1.1",
++  "component": {
++    "group": "com.fasterxml.jackson.core",
++    "module": "jackson-annotations",
++    "version": "2.13.0-rc1",
++    "attributes": {
++      "org.gradle.status": "release"
++    }
++  },
++  "createdBy": {
++    "maven": {
++      "version": "3.6.3"
++    }
++  },
++  "variants": [
++    {
++      "name": "apiElements",
++      "attributes": {
++        "org.gradle.category": "library",
++        "org.gradle.dependency.bundling": "external",
++        "org.gradle.libraryelements": "jar",
++        "org.gradle.usage": "java-api"
++      },
++      "dependencies": [
++        {
++          "group": "com.fasterxml.jackson",
++          "module": "jackson-bom",
++          "version": {
++            "requires": "2.13.0-rc1"
++          },
++          "attributes": {
++            "org.gradle.category": "platform"
++          },
++          "endorseStrictVersions": true
++        }
++      ],
++      "files": [
++        {
++          "name": "jackson-annotations-2.13.0-rc1.jar",
++          "url": "jackson-annotations-2.13.0-rc1.jar",
++          "size": 75720,
++          "sha512": "692ba70808fe4e7514d385773f56284474eab00211862fe15f0454d89c55f1c5924d6bac0ab0c4770b39e6debf6d30e82dd8214f1c48b439014145985b1b9be0",
++          "sha256": "28e62de7dae5bbceafbf483d5b1979bbd90e38ad356aca600a34235babd14e5a",
++          "sha1": "78e10eeeedfca0bc4cd743e9144dd5fb3ebcb5b1",
++          "md5": "ff16c540a8a155b105ee864b26bcd376"
++        }
++      ]
++    },
++    {
++      "name": "runtimeElements",
++      "attributes": {
++        "org.gradle.category": "library",
++        "org.gradle.dependency.bundling": "external",
++        "org.gradle.libraryelements": "jar",
++        "org.gradle.usage": "java-runtime"
++      },
++      "dependencies": [
++        {
++          "group": "com.fasterxml.jackson",
++          "module": "jackson-bom",
++          "version": {
++            "requires": "2.13.0-rc1"
++          },
++          "attributes": {
++            "org.gradle.category": "platform"
++          },
++          "endorseStrictVersions": true
++        }
++      ],
++      "files": [
++        {
++          "name": "jackson-annotations-2.13.0-rc1.jar",
++          "url": "jackson-annotations-2.13.0-rc1.jar",
++          "size": 75720,
++          "sha512": "692ba70808fe4e7514d385773f56284474eab00211862fe15f0454d89c55f1c5924d6bac0ab0c4770b39e6debf6d30e82dd8214f1c48b439014145985b1b9be0",
++          "sha256": "28e62de7dae5bbceafbf483d5b1979bbd90e38ad356aca600a34235babd14e5a",
++          "sha1": "78e10eeeedfca0bc4cd743e9144dd5fb3ebcb5b1",
++          "md5": "ff16c540a8a155b105ee864b26bcd376"
++        }
++      ]
++    }
++  ]
++}

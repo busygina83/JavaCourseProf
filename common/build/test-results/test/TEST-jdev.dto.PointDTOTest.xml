@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jdev.dto.PointDTOTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-28T16:50:39" hostname="MURZIKI" time="0.218">
+  <properties/>
+  <testcase name="toJson" classname="jdev.dto.PointDTOTest" time="0.218"/>
+  <system-out><![CDATA[toJson:   {"lat":56.0,"lon":74.0,"autoId":"o567gfd"}
+toObject:   PointDTO{lat=56.0, lon=74.0, autoId='o567gfd'}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

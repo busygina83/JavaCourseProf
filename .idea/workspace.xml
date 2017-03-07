@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="64706d9e-28bf-4483-8800-48b9fd67ee8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/caches/jars-8/e39f3376e32aa526d9c3896126f8b3b4/init.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caches/jars-8/f285f1b64219dc25f43883f095d8330d/cp_init.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daemon/6.8/daemon-8236.out.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2021_14_01_[Default_Changelist]/gradle-lib.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2021_14_01_[Default_Changelist]/gradle-lib1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caches/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/caches/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caches/6.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/caches/6.8/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caches/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/caches/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caches/jars-8/jars-8.lock" beforeDir="false" afterPath="$PROJECT_DIR$/caches/jars-8/jars-8.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caches/journal-1/file-access.bin" beforeDir="false" afterPath="$PROJECT_DIR$/caches/journal-1/file-access.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caches/journal-1/journal-1.lock" beforeDir="false" afterPath="$PROJECT_DIR$/caches/journal-1/journal-1.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caches/modules-2/modules-2.lock" beforeDir="false" afterPath="$PROJECT_DIR$/caches/modules-2/modules-2.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daemon/6.8/daemon-14624.out.log" beforeDir="false" afterPath="$PROJECT_DIR$/daemon/6.8/daemon-14624.out.log" afterDir="false" />
+    </list>
+    <list id="93c78482-9a44-406e-aabe-2cd4a6ba9c2f" name="Revert &quot;Задание на практическую работу 2&quot;" comment="Revert &quot;Задание на практическую работу 2&quot;&#10;&#10;This reverts commit 4bd8edf0" />
+    <list id="8a757b9f-b01d-4968-98ce-b96f0621979a" name="Задание на практическую работу 2" comment="">
+      <change beforePath="$PROJECT_DIR$/daemon/6.8/daemon-15112.out.log" beforeDir="false" afterPath="$PROJECT_DIR$/daemon/6.8/daemon-15112.out.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daemon/6.8/registry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/daemon/6.8/registry.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daemon/6.8/registry.bin.lock" beforeDir="false" afterPath="$PROJECT_DIR$/daemon/6.8/registry.bin.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/common">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/server-core">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/tracker-core">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="toll-2017-gradle" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="d819447ed4c0ccbe47f1ae1e5c4c91fe6da593c1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1c613c61-77c9-41ca-a3eb-ae6e7d7a3772" />
+        <option name="url" value="https://github.com/saturn900/toll-2017.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1vM03u9DI6XJjWqdq24C1QW8jKt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowTODO.ShowToolbar" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager" selected="Gradle.PointDTOTest.toJson">
+    <configuration name="PointDTOTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;jdev.dto.PointDTOTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":common:test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>false</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PointDTOTest.decodeDto" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;jdev.dto.PointDTOTest.decodeDto&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":common:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PointDTOTest.toJson" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;jdev.dto.PointDTOTest.toJson&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":common:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PointDTOTest.toJson" />
+        <item itemvalue="Gradle.PointDTOTest.decodeDto" />
+        <item itemvalue="Gradle.PointDTOTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64706d9e-28bf-4483-8800-48b9fd67ee8c" name="Default Changelist" comment="" />
+      <changelist id="8a757b9f-b01d-4968-98ce-b96f0621979a" name="Задание на практическую работу 2" comment="" />
+      <created>1626356468172</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626356468172</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Задание на практическую работу 2">
+      <created>1627492195429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627492195429</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Задание на практическую работу 2">
+      <created>1627492615228</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627492615228</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Задание на практическую работу 2">
+      <created>1627567861633</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627567861633</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Задание на практическую работу 2">
+      <created>1627568339016</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627568339016</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Задание на практическую работу 2">
+      <created>1627574474553</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627574474553</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Задание на практическую работу 2">
+      <created>1627584008679</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627584008679</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Задание на практическую работу 2">
+      <created>1627584300392</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1627584300392</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Задание на практическую работу 2">
+      <created>1627584994262</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1627584994262</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Задание на практическую работу 2">
+      <created>1627585606163</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1627585606163</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Задание на практическую работу 2">
+      <created>1627585928095</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627585928095</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Задание на практическую работу 2">
+      <created>1627585939657</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1627585939657</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Задание на практическую работу 2">
+      <created>1627587148608</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1627587148608</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Задание на практическую работу 2">
+      <created>1627588044560</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1627588044560</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Задание на практическую работу 2">
+      <created>1627589548319</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1627589548319</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Задание на практическую работу 2">
+      <created>1627590581672</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1627590581672</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Задание на практическую работу 2">
+      <created>1627590820684</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1627590820684</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="test3" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
+    <option name="RELOAD_CONTEXT" value="false" />
+    <MESSAGE value="Задание на практическую работу 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание на практическую работу 2" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -41,6 +41,10 @@ public class PointDTO {
         return mapper.writeValueAsString(this);
     }
 
+    public Object toObject() throws JsonProcessingException {
+        return this;
+    }
+
     @Override
     public String toString() {
         return "PointDTO{" +

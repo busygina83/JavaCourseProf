@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.rholder</groupId>
+  <artifactId>gradle-one-jar</artifactId>
+  <version>1.0.4</version>
+  <name>gradle-one-jar</name>
+  <description>The gradle-one-jar project is a Gradle plugin that uses One-JAR, a specialized Class-Loader written by Simon Tuffs (http://one-jar.sourceforge.net/), for building self-contained executable jars that include all dependencies.</description>
+  <url>http://rholder.github.com</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>rholder</id>
+      <name>Ray Holder</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git@github.com:rholder/gradle-one-jar.git</connection>
+    <developerConnection>scm:git@github.com:rholder/gradle-one-jar.git</developerConnection>
+    <url>scm:git@github.com:rholder/gradle-one-jar.git</url>
+  </scm>
+</project>
