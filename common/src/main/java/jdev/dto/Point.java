@@ -91,7 +91,7 @@ public class Point {
 
     @Override
     public String toString() {
-        return "PointDTO{" +
+        return "{ " +
                 "autoId='" + autoId + '\'' +
                 ", time='" + getDateFormat(time) + '\'' +
                 ", lat=" + String.format("%.5f",lat) +
@@ -101,7 +101,7 @@ public class Point {
                 ", azimuth=" + String.format("%.5f",duration) +
                 ", speed=" + String.format("%.5f",speed) +
                 ", speedUp=" + String.format("%.5f",speedUp) +
-                '}';
+                " }";
     }
 
 }

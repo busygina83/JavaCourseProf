@@ -1,7 +1,6 @@
 package jdev.dto;
 
-
-import jdev.tracker.EmulatorGPS;
+import queues.GpsEmulator;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
@@ -14,7 +13,7 @@ public class PointTest {
     @Test
     public void toJson() {
         Point point = new Point();
-        EmulatorGPS gps = new EmulatorGPS();
+        GpsEmulator gps = new GpsEmulator();
         gps.setBegin(point,"123");
 //        gps.setEnd(point, "123");
 

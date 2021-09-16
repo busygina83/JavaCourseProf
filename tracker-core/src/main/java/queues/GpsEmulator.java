@@ -1,10 +1,10 @@
-package jdev.tracker;
+package queues;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import jdev.dto.Point;
 import static java.lang.Math.PI;
 
-public class EmulatorGPS {
+public class GpsEmulator {
 
     //создадим новый объект
 
@@ -125,6 +125,7 @@ public class EmulatorGPS {
             point.setSpeedUp(curSpeedUp);
         }
 //        System.out.println("point.toJson():   "+point.toJson());
+        //return point.toJson();
         return point.toJson();
     }
 }

@@ -1,7 +1,7 @@
-package jdev.tracker;
+package queues;
 
-import jdev.tracker.services.GpsService;
-import jdev.tracker.services.SendService;
+import services.GpsService;
+import services.SendService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.TaskScheduler;

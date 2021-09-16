@@ -1,7 +1,8 @@
-package jdev.tracker;
+package my;
 
 import jdev.dto.Point;
-import jdev.tracker.services.GpsService;
+import queues.*;
+import services.GpsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,7 +16,7 @@ public class Main {
 
     public static void main(String... args) throws Exception {
         Point point=new Point();
-        EmulatorGPS gps = new EmulatorGPS();
+        GpsEmulator gps = new GpsEmulator();
         Logger log = LoggerFactory.getLogger(GpsService.class);
         BlockingDeque<String> queue = new LinkedBlockingDeque<>(100);
         for (int i=0;; i++) {

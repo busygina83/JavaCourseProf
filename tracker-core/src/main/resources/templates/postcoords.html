@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'Приветствуем Вас, ' + ${name} + '!'" />
+<p th:text="'Широта: ' + ${latitude}" />
+<p th:text="'Долгота: ' + ${longitude}" />
+<a href=""><span th:text="'Обновить координаты'"></span></a>
+</body>
+</html>
