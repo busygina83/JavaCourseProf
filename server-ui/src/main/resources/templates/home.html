@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Пример Spring Security</title>
+</head>
+<body>
+<h1 th:inline="text">Welcome, [[${#httpServletRequest.remoteUser}]]!</h1>
+
+<p>Кликните <a th:href="@{/hello}">здесь</a>, для приветствия.</p>
+<p> </p>
+<p>Перейти на контекст <a th:href="@{/css}">/css</a> Вы можете и без авторизации.</p>
+<p>Перейти на контекст <a th:href="@{/img}">/img</a> Вы можете и без авторизации.</p>
+<p>Перейти на контекст <a th:href="@{/routes}">/routes</a>, если Вы относитесь к группе CLIENT/MANAGER/ROOT.</p>
+<p>Перейти на контекст <a th:href="@{/payments}">/payments</a>, если Вы относитесь к группе CLIENT/MANAGER/ROOT.</p>
+<p>Перейти на контекст <a th:href="@{/registerClient}">/registerClient</a>, если Вы относитесь к группе MANAGER/ROOT.</p>
+<p>Перейти на контекст <a th:href="@{/registerManager}">/registerManager</a>, если Вы относитесь к группе ROOT.</p>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Выйти из системы"/>
+</form>
+</body>
+</html>
