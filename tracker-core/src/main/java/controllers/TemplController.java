@@ -7,23 +7,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import services.GpsService;
 
 @RestController
 public class TemplController {
 
-    @Autowired
+    //@Autowired
     private RestTemplate restTemplate;
     Logger log = LoggerFactory.getLogger(TemplController.class);
+
+    public TemplController(@Autowired RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
+
+    public TemplController() {}
 
     @RequestMapping(value = "/relay")
     public Response relay(@RequestParam(value="location", required=false, defaultValue="0;0") String location){
         //System.out.println(location);
         Response response;
-        if (location.split(";").length == 2) {
-            response = new Response(location, true);
+        String [] locSplit = location.split(";");
+        if (locSplit.length == 2) {
+            response = new Response("{\"lat\":"+locSplit[0]+",\"lon\":"+locSplit[1]+"}", true);
         } else {
-            response = new Response("fail", false);
+            response = new Response("{ERROR}", false);
         }
         log.info("response "+response);
         return response;

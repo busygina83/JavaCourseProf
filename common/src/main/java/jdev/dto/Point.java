@@ -1,17 +1,11 @@
 package jdev.dto;
 
-
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-//import java.io.IOException;
-
-/**
- * Created by jdev on 06.03.2017.
- */
 public class Point {
 
     private String getDateFormat(long TimeMillis) {
@@ -80,9 +74,23 @@ public class Point {
 
     public void setDuration(double duration) { this.duration = duration; }
 
-    public String toJson() throws JsonProcessingException {
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.writeValueAsString(this);
+    public String toJson() throws JSONException {
+        JSONObject mapper = new JSONObject(this);
+        return mapper.toString();
+    }
+
+    public String toJson1() throws JSONException {
+        return "{ " +
+                "autoId:'" + autoId + '\'' +
+                ",time:'" + getDateFormat(time) + '\'' +
+                ",lat:" + String.format("%.5f",lat) +
+                ",lon:" + String.format("%.5f",lon) +
+                ",azimuth:" + String.format("%.5f",azimuth) +
+                ",azimuthDelta:" + String.format("%.5f",azimuthDelta) +
+                ",duration:" + String.format("%.5f",duration) +
+                ",speed:" + String.format("%.5f",speed) +
+                ",speedUp:" + String.format("%.5f",speedUp) +
+                " }";
     }
 
     public Object toObject() {
@@ -97,8 +105,8 @@ public class Point {
                 ", lat=" + String.format("%.5f",lat) +
                 ", lon=" + String.format("%.5f",lon) +
                 ", azimuth=" + String.format("%.5f",azimuth) +
-                ", azimuth=" + String.format("%.5f",azimuthDelta) +
-                ", azimuth=" + String.format("%.5f",duration) +
+                ", azimuthDelta=" + String.format("%.5f",azimuthDelta) +
+                ", duration=" + String.format("%.5f",duration) +
                 ", speed=" + String.format("%.5f",speed) +
                 ", speedUp=" + String.format("%.5f",speedUp) +
                 " }";

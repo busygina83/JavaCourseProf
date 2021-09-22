@@ -1,8 +1,5 @@
 package controllers;
 
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import services.GpsService;
@@ -10,22 +7,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import java.util.concurrent.BlockingDeque;
+import org.json.JSONObject;
 
 //@RestController
 @Controller
 public class CoodrsController {
 
     @Autowired
-    private GpsService gpsService;
+    GpsService gpsService;
+
     @Autowired
-    private RestTemplate restTemplate;
+    RestTemplate restTemplate;
 
     @RequestMapping(value = "/postl")
     public String getLocation(@RequestParam(value="name", required=false, defaultValue="Noname") String name, Model model
     ) throws InterruptedException {
-        BlockingDeque<String> queue = gpsService.queue;
         //Object request=queue.poll(500, TimeUnit.MILLISECONDS);
-        String request=queue.take();
+        String request=gpsService.queue.take();
         model.addAttribute("name", name);
         model.addAttribute("locat", request);
         return "postlocation";
@@ -33,15 +31,13 @@ public class CoodrsController {
 
     @RequestMapping(value = "/postc")
     public String getCoords(@RequestParam(value="name", required=false, defaultValue="Noname") String name, Model model
-    ) throws InterruptedException, ParseException {
-        BlockingDeque<String> queue = gpsService.queue;
+    ) throws InterruptedException {
         //Object request=queue.poll(500, TimeUnit.MILLISECONDS);
-        String request=queue.take();
-        Object obj = new JSONParser().parse(request);
-        JSONObject jo = (JSONObject) obj;
+        String request=gpsService.queue.take();
+        JSONObject obj = new JSONObject(request);
         model.addAttribute("name", name);
-        model.addAttribute("latitude", jo.get("lat"));
-        model.addAttribute("longitude", jo.get("lon"));
+        model.addAttribute("latitude", obj.get("lat"));
+        model.addAttribute("longitude", obj.get("lon"));
         return "postcoords";
     }
 

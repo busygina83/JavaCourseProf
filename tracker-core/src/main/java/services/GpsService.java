@@ -1,6 +1,6 @@
 package services;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+import org.json.JSONException;
 import jdev.dto.Point;
 import queues.*;
 import org.slf4j.Logger;
@@ -19,9 +19,10 @@ public class GpsService {
     GpsEmulator gps = new GpsEmulator();
 
     @Scheduled(fixedDelay = 2000)
-    public void put() throws InterruptedException, JsonProcessingException {
+    public void put() throws InterruptedException, JSONException {
         Logger log = LoggerFactory.getLogger(GpsService.class);
         String toJson = gps.setEnd(point, "123",2000);
+        System.out.println("toJson: "+toJson);
         queue.put(toJson);
         log.info("ScheduledService.put " + toJson);
     }

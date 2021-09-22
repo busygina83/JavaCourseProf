@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="controllers.TemplControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-22T09:08:54" hostname="MURZIKI" time="0.037">
+  <properties/>
+  <testcase name="relayjson()" classname="controllers.TemplControllerTest" time="0.025"/>
+  <testcase name="relay()" classname="controllers.TemplControllerTest" time="0.011"/>
+  <system-out><![CDATA[22.09.21 12:08:54.526 [Test worker] INFO  c.TemplController - response controllers.Response@34b82d26
+22.09.21 12:08:54.532 [Test worker] INFO  c.TemplController - response controllers.Response@4b908145
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

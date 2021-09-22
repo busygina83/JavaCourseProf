@@ -1,6 +1,6 @@
 package queues;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+import org.json.JSONException;
 import jdev.dto.Point;
 import static java.lang.Math.PI;
 
@@ -9,7 +9,7 @@ public class GpsEmulator {
     //создадим новый объект
 
     //установим начальные значения GPS трекинга грузовика
-    public void setBegin(Point point, String AutoId) {
+    public static void setBegin(Point point, String AutoId) {
         point.setAutoId(AutoId);
         point.setTime(System.currentTimeMillis());
         point.setLat(Math.random()*180-90);
@@ -22,7 +22,7 @@ public class GpsEmulator {
         System.out.println("setBegin:   "+point.toObject());
     }
 
-    public String setEnd(Point point, String AutoId, long timeout) throws JsonProcessingException, InterruptedException {
+    public String setEnd(Point point, String AutoId, long timeout) throws InterruptedException, JSONException {
 
 //        пределы значений: широта от −90° до +90°, долгота от −180° до +180°
 //        максимальная скорость 108 км/ч
@@ -124,8 +124,7 @@ public class GpsEmulator {
             point.setSpeed(curSpeed);
             point.setSpeedUp(curSpeedUp);
         }
-//        System.out.println("point.toJson():   "+point.toJson());
-        //return point.toJson();
+        System.out.println("point.toJson():   "+point.getSpeed());
         return point.toJson();
     }
 }
