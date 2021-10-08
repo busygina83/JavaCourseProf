@@ -24,7 +24,7 @@ import static com.mongodb.client.model.Sorts.descending;
 
 @Controller
 public class MainController {
-    private static final String[] NAMES = { "Tom", "Jerry", "Donald" };
+//    private static final String[] NAMES = { "Tom", "Jerry", "Donald" };
 
 //    @Autowired
 //    public PointRepository pointRepository;
