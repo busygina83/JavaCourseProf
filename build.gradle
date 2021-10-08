@@ -9,11 +9,26 @@ buildscript {
     }
     dependencies {
         classpath 'com.github.rholder:gradle-one-jar:1.0.4'
-        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE'
-        classpath 'com.bmuschko:gradle-tomcat-plugin:2.5'
+        classpath 'org.springframework.data:spring-data-commons:2.1.15.RELEASE'
+        //classpath 'org.springframework.data:spring-data-mongodb:2.1.5.RELEASE'
+        //classpath 'org.springframework.data:spring-data-mongodb:3.0.9.RELEASE'
+        //classpath 'org.springframework.data:spring-data-commons:2.1.21.RELEASE'
+        classpath 'org.springframework.data:spring-data-commons:2.1.5.RELEASE'
+        //classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.22.RELEASE'
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.1.5.RELEASE'
+        classpath 'org.springframework.boot:spring-boot-starter-parent:2.1.5.RELEASE'
+        classpath 'org.springframework:spring-core:5.1.19.RELEASE'
+        classpath 'org.springframework:spring-test:5.1.19.RELEASE'
+        //classpath 'org.springframework:spring-context:5.1.19.RELEASE'
+        classpath 'junit:junit:4.13.1'
         classpath 'org.json:json:20210307'
     }
 }
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
 
 subprojects{
     apply plugin: 'java'
@@ -26,11 +41,40 @@ subprojects{
         }
     }
     dependencies {
-        compile group: 'org.springframework', name: 'spring-context', version: '4.3.7.RELEASE'
+        //compile ('org.springframework.boot:spring-boot-starter-web:1.5.19.RELEASE') {exclude module: "spring-boot-starter-tomcat"}
+        implementation ('org.springframework.boot:spring-boot-starter-web:1.5.19.RELEASE')
+        //compile group: 'org.springframework', name: 'spring-context', version: '4.3.7.RELEASE'
+        implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.1.15.RELEASE'
+        //implementation 'org.springframework:spring-context:5.1.19.RELEASE'
+        implementation 'org.springframework:spring-beans:5.1.19.RELEASE'
+        implementation 'org.springframework:spring-core:5.1.19.RELEASE'
+        implementation 'org.springframework:spring-expression:5.1.19.RELEASE'
         implementation 'org.json:json:20210307'
+        implementation group: 'org.mongodb', name: 'mongo-java-driver', version: '3.10.2'
+        implementation 'org.springframework.boot:spring-boot-starter-data-mongodb:2.1.5.RELEASE'
+        implementation 'org.springframework.boot:spring-boot-starter-security:2.1.5.RELEASE'
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.1.5.RELEASE'
+        //implementation 'org.springframework.data:spring-data-mongodb:3.0.9.RELEASE'
+        implementation 'org.springframework.data:spring-data-mongodb:2.1.5.RELEASE'
+        implementation 'org.springframework.data:spring-data-commons:2.1.5.RELEASE'
+        implementation 'org.springframework.boot:spring-boot-starter-parent:2.1.5.RELEASE'
+        implementation 'org.springframework.boot:spring-boot-configuration-processor:2.1.5.RELEASE'
+        implementation group: 'org.liquibase.ext', name: 'liquibase-mongodb', version: '4.4.3'
+        implementation 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
+        //implementation 'org.springframework.boot:spring-boot-gradle-plugin:1.5.22.RELEASE'
+        implementation 'org.springframework.boot:spring-boot-gradle-plugin:2.1.5.RELEASE'
+        implementation "org.springframework.boot:spring-boot-devtools:2.1.5.RELEASE"
+        implementation "org.springframework.boot:spring-boot-starter-thymeleaf:2.1.5.RELEASE"
+        implementation 'org.springframework:spring-webmvc:5.1.19.RELEASE'
+
+        //implementation group: 'org.hibernate.orm', name: 'hibernate-core', version: '6.0.0.Alpha9'
+        implementation 'org.liquibase:liquibase-core:3.10.3'
+        implementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.2.0'
+        implementation 'org.thymeleaf:thymeleaf:2.1.5.RELEASE'
         testImplementation 'org.junit.jupiter:junit-jupiter:5.8.0'
         testImplementation 'org.mockito:mockito-core:3.12.4'
         testImplementation 'org.mockito:mockito-junit-jupiter:3.12.4'
+        implementation group: 'org.glassfish.jaxb', name: 'jaxb-runtime', version: '3.0.2'
     }
     test {
         useJUnitPlatform()
@@ -47,25 +91,26 @@ project(':server-core') {
     apply plugin: 'war'
     apply plugin: 'gradle-one-jar'
     apply plugin: 'org.springframework.boot'
-    apply plugin: 'com.bmuschko.tomcat'
     apply plugin: 'java-library-distribution'
 
     dependencies {
-        compile("org.springframework.boot:spring-boot-starter-thymeleaf")
-        compile("org.springframework.boot:spring-boot-devtools")
+        //compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+        //compile("org.springframework.boot:spring-boot-devtools")
         testCompile("org.springframework.boot:spring-boot-starter-test")
         compile project(':common')
         compile project(':tracker-core')
-        def tomcatVersion = '9.0.17'
-        def juliVersion = '9.0.0.M6'
-        tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
-                "org.apache.tomcat.embed:tomcat-embed-logging-juli:${juliVersion}",
-                "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+        compile("org.springframework.boot:spring-boot-starter")
+        compile("org.springframework:spring-jdbc:4.3.25.RELEASE")
+        //def tomcatVersion = '9.0.17'
+        //def juliVersion = '9.0.0.M6'
+        //tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+        //        "org.apache.tomcat.embed:tomcat-embed-logging-juli:${juliVersion}",
+        //        "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
     }
-    tomcat {
-        httpProtocol = 'org.apache.coyote.http11.Http11Nio2Protocol'
-        ajpProtocol = 'org.apache.coyote.ajp.AjpNio2Protocol'
-    }
+    //tomcat {
+        //httpProtocol = 'org.apache.coyote.http11.Http11Nio2Protocol'
+        //ajpProtocol = 'org.apache.coyote.ajp.AjpNio2Protocol'
+    //}
 }
 
 project(':server-ui') {
@@ -73,18 +118,14 @@ project(':server-ui') {
     apply plugin: 'org.springframework.boot'
 
     dependencies {
-        compile("org.springframework.boot:spring-boot-starter-thymeleaf")
-        compile("org.springframework.boot:spring-boot-devtools")
-        compile("org.springframework.boot:spring-boot-starter-security")
-        // end::security[]
+        compile ('org.liquibase:liquibase-core')
+        //compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+        //compile("org.springframework.boot:spring-boot-devtools")
         testCompile("org.springframework.boot:spring-boot-starter-test")
         testCompile("org.springframework.security:spring-security-test")
+        testCompile("org.springframework.boot:spring-boot-starter-test")
     }
 
-    jar {
-        baseName = 'security-boot'
-        version =  '0.1.0'
-    }
 }
 
 project(':tracker-core') {
@@ -96,9 +137,13 @@ project(':tracker-core') {
     dependencies {
         compile project(':common')
         compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
-        compile("org.springframework.boot:spring-boot-starter-thymeleaf")
-        compile("org.springframework.boot:spring-boot-devtools")
+        //compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+        //compile("org.springframework.boot:spring-boot-devtools")
+        compile("org.springframework.boot:spring-boot-starter")
+        //compile("org.springframework.boot:spring-boot-starter-data-jpa")
+        compile("org.springframework:spring-jdbc:4.3.25.RELEASE")
         implementation 'org.json:json:20210307'
+        testCompile("org.springframework.boot:spring-boot-starter-test")
         testCompile("org.springframework.boot:spring-boot-starter-test")
     }
 
@@ -109,5 +154,6 @@ project(':tracker-core') {
 
 project(':tracker-ui') {
 }
+
 
 

@@ -1,6 +1,0 @@
-jdev/dto/PointTest.java
- jdev.dto.PointTest
-controllers/CoodrsControllerTest.java
- controllers.CoodrsControllerTest
-controllers/TemplControllerTest.java
- controllers.TemplControllerTest

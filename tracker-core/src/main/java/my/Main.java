@@ -1,8 +1,8 @@
 package my;
 
-import jdev.dto.Point;
-import queues.*;
-import services.GpsService;
+import application.Point;
+import queue.*;
+import service.GpsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

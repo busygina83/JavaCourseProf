@@ -1,2 +1,2 @@
-jdev/dto/Point.java
- jdev.dto.Point
+dto/Point.java
+ dto.Point

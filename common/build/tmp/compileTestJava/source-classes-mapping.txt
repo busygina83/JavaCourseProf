@@ -1,2 +1,0 @@
-jdev/dto/PointTest.java
- jdev.dto.PointTest

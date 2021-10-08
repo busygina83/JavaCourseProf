@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd
+http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="db.creation" author="inna">
+        <ext:createCollection collectionName="GpsEmulator">
+            <ext:options>
+                {
+                    validator: {
+                        //$jsonSchema: {
+                            //bsonType: "object",
+                            required: ["id","autoid","time","lat","lon","azimuth","azimuthdelta","duration","speed","speedup"],
+                            properties: {
+                                id: {
+                                    bsonType: "double",
+                                    description: "уникальный номер"
+                                },
+                                autoId: {
+                                    bsonType: "string",
+                                    description: "ID грузовика"
+                                },
+                                time: {
+                                    bsonType: "long",
+                                    description: "текущее время"
+                                },
+                                lat: {
+                                    bsonType: "double",
+                                    description: "широта"
+                                },
+                                lon: {
+                                    bsonType: "double",
+                                    description: "долгота"
+                                },
+                                azimuth: {
+                                    bsonType: "double",
+                                    description: "угол уклона направления грузовика от северного вектора"
+                                },
+                                azimuthDelta: {
+                                    bsonType: "double",
+                                    description: "разница угла уклона в сек на поворотах"
+                                },
+                                duration: {
+                                    bsonType: "double",
+                                    description: "расстояние за сек на прямых"
+                                },
+                                speed: {
+                                    bsonType: "double",
+                                    description: "текущая скорость грузовика"
+                                },
+                                speedUp: {
+                                    bsonType: "double",
+                                    description: "ускорение грузовика"
+                                }
+                            }
+                        }
+                    //},
+                //validationAction: "warn",
+                //validationLevel: "strict"
+                }
+            </ext:options>
+        </ext:createCollection>
+    </changeSet>
+</databaseChangeLog>
